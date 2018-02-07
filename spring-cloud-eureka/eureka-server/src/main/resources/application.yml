@@ -4,6 +4,9 @@ server:
 eureka:
   instance:
     hostname: localhost
+  server:
+    # 关闭自我保护模式
+    enable-self-preservation: false
   client:
     # 是否向 Eureka 注册服务。该应用为服务注册中心，不需要自注册，设置为 false
     registerWithEureka: false
