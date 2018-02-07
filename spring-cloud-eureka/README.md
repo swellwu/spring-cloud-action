@@ -36,20 +36,20 @@ http://localhost:8762/hi?name=swellwu
 可以看到调用服务成功：
 ![调用服务][2]
 
-## ribbon 负载均衡
+## 服务消费者ribbon 
 ribbon+restTemplate 提供负载均衡
 启动eureka-server 和 两个eureka-client，相当于一个服务有多个提供者。
 然后启动service-ribbon，访问http://localhost:8764/hi?name=swellwu
-发现实现了负载均衡
+实现了负载均衡
 如图：
 ![image_1c5n591841uiu1b0pl0d1mne10uh9.png-12.6kB][3]
 
 ![image_1c5n59pc91cvb1kmfo3g144d1h8u1m.png-12.3kB][4]
 
-
-
+## 服务消费者feign
+内部用ribbon实现，使用注解的方式实现服务消费
 
 [1]: http://static.zybuluo.com/swellwu/fxewcjnkl0z43beqqs9nj5w9/image_1c5lnsm75119m6tdlnrjv52ikp.png
 [2]: http://static.zybuluo.com/swellwu/uos4iji7wqadnsizlv4f002o/image_1c5lo1mkucmbpag1f6618r01rcs1m.png
-  [3]: http://static.zybuluo.com/swellwu/cs7ug73y2q8b7j02jkcacxxy/image_1c5n591841uiu1b0pl0d1mne10uh9.png
-  [4]: http://static.zybuluo.com/swellwu/ulcxo4z7q8h1w80c488cu581/image_1c5n59pc91cvb1kmfo3g144d1h8u1m.png
+[3]: http://static.zybuluo.com/swellwu/cs7ug73y2q8b7j02jkcacxxy/image_1c5n591841uiu1b0pl0d1mne10uh9.png
+[4]: http://static.zybuluo.com/swellwu/ulcxo4z7q8h1w80c488cu581/image_1c5n59pc91cvb1kmfo3g144d1h8u1m.png
