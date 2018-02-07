@@ -37,6 +37,7 @@ http://localhost:8762/hi?name=swellwu
 ![调用服务][2]
 
 ## ribbon 负载均衡
+ribbon+restTemplate 提供负载均衡
 启动eureka-server 和 两个eureka-client，相当于一个服务有多个提供者。
 然后启动service-ribbon，访问http://localhost:8764/hi?name=swellwu
 发现实现了负载均衡
