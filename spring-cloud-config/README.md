@@ -1,4 +1,5 @@
 # spring-cloud-config
+spring-cloud-config中文文档：https://springcloud.cc/spring-cloud-config.html
 ## config-server
 配置：
 ```properties
